@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="top.lothar.bean.User" table="user">
+		<!-- 主键生成 -->
+		<id name="id" type="long">
+			<column name="id"></column>
+			<generator class="identity"></generator>
+		</id>
+		
+		<property name="username" type="java.lang.String">
+			<column name="username"></column>
+		</property>
+		
+		<property name="password" type="java.lang.String">
+			<column name="password"></column>
+		</property>
+	</class>
+</hibernate-mapping>
